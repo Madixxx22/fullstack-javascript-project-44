@@ -13,7 +13,7 @@ export const startGame = (assignment, getQuestion) => {
     console.log(`Question: ${gameInfo.question}`);
     answerUser = readlineSync.question('Your answer: ');
     if (answerUser !== gameInfo.answer) {
-      console.log(`${answerUser} is wrong answer ;(. Correct answer was ${gameInfo.answer}.`);
+      console.log(`'${answerUser}' is wrong answer ;(. Correct answer was '${gameInfo.answer}'.`);
       console.log(`Let's try again, ${name}!`);
       return 0;
     }
