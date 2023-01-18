@@ -6,12 +6,14 @@ export const getQuestion = () => {
   const startNumber = Math.floor(Math.random() * 100) + 1;
   let previousNumber = startNumber;
   const progression = [startNumber];
-  for (let i = 0; i <= lengthProgression; i++) {
+  /* eslint-disable-next-line */
+  for (let i = 0; i <= lengthProgression; i += 1) {
     previousNumber += step;
     progression.push(previousNumber);
   }
   const answer = progression[Math.floor(Math.random() * progression.length)];
   let question = '';
+  /* eslint-disable-next-line */
   for (const item of progression) {
     if (item === answer) {
       question += '.. ';
