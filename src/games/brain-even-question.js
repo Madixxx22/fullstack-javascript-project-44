@@ -6,8 +6,8 @@ export const getQuestion = () => {
   if (number % 2 === 0) {
     answer = 'yes';
   } else {
-  answer = 'no';
-  };
+    answer = 'no';
+  }
   const response = {
     question: number,
     answer,
